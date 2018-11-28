@@ -29,7 +29,7 @@ class Character:
             done = True
 
     def _calculate_derivatives(self):   #replace with setter function for stats
-        self.hp = self.stats
+        pass
 
 
 class Stat:
@@ -46,7 +46,7 @@ def load_stats():
     for stat in ['STR', 'DEX', 'CON', 'INT', 'WIS', 'LCK']:
         stat_list.append(Stat(stat))
     for derivative in ['HP', 'MP']:
-        derivative_list.append(Stat(stat))
+        derivative_list.append(Stat(derivative))
 
 
     

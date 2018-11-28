@@ -8,9 +8,9 @@ class Launcher():
     host_ip = '85.245.77.162'
     host_port = 7700
 
-    def __init__(self):
+    def __init__(self, username=None):
         self.connect()
-        self.username = 'dev' ##################
+        self.username = username
         self.set_username(self.username)
         self.launch_BRINE()
 
@@ -156,5 +156,10 @@ class BRINEClient():
         if not self.scrollbar_locked:
             self.display.see("end")
 
-l = Launcher()
+def main(username=None):
+    Launcher(username)
+
+
+if __name__ == '__main__':
+    main()
 
