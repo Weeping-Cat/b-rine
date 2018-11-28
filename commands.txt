@@ -1,0 +1,4 @@
+/nick
+/register
+/login
+/pet
